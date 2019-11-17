@@ -2,10 +2,7 @@ import React from "react"
 
 import { Heading, SEO } from "../components"
 import { RenderMarkdown } from "../core"
-import {
-  safelyGetFrontMatter,
-  withFallback,
-} from "../cms"
+import { safelyGetFrontMatter, withFallback } from "../cms"
 
 export const HomePageTemplate = ({ title, sections }) => (
   <article>
@@ -15,9 +12,7 @@ export const HomePageTemplate = ({ title, sections }) => (
       return (
         <section key={i}>
           <h2>{section.title}</h2>
-          <RenderMarkdown
-            md={section.body}
-          />
+          <RenderMarkdown md={section.body} />
           <hr />
         </section>
       )

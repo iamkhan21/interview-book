@@ -14,9 +14,7 @@ import { CMS_COMPONENTS, CMS_SHORTCODES } from "../cms"
 
 export const RenderMarkdown = ({ md }) => (
   <CatchError>
-    <MDX components={{...CMS_COMPONENTS, ...CMS_SHORTCODES}}>
-      {md}
-    </MDX>
+    <MDX components={{ ...CMS_COMPONENTS, ...CMS_SHORTCODES }}>{md}</MDX>
   </CatchError>
 )
 

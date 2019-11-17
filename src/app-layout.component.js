@@ -9,14 +9,16 @@ const Container = styled.main`
   padding: 0 1.0875rem 1.45rem;
   display: grid;
   grid-template-columns: 1fr;
+  grid-gap: 20px;
+  
+  @media (min-width: 960px) {
+    grid-template-columns: 200px 1fr;
+  }
+
   .content-container {
     width: 100%;
     max-width: 960px;
     margin: 0 auto;
-  }
-
-  @media (min-width: 960px) {
-    grid-template-columns: 200px 1fr;
   }
 `
 const Footer = styled.footer`

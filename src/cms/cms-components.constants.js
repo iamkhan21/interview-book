@@ -1,6 +1,6 @@
 import React from "react"
 
-import { Heading, CallToAction, SmartLink } from "../components"
+import { CallToAction, Heading, SmartLink } from "../components"
 
 // Include all components that will be parsed by MDX as React components here.
 // Any React component you'd like to allow your editors to use should be placed here.

@@ -12,7 +12,7 @@ import { RenderMarkdown } from "../core"
 
 export const DefaultPageTemplate = ({ title, body, children }) => {
   return (
-    <article>
+    <article className="markdown">
       <SEO title={withFallback(title, "")} />
       <Heading tag={1}>{title}</Heading>
       {/* If children should be used instead of body, body will be empty, so it's safe to have both */}

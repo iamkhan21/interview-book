@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
     title: "Interview Book",
-    description: "Interview Book - help you to prepare",
+    description: "Interview Book - Carefully curated content to help you ace your next technical interview.",
     author: "ivan.khanevich@gmail.com",
   },
   plugins: [
     {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
-        fonts: [{ family: `Raleway` }],
+        fonts: [{ family: `Noto Sans` }],
       },
     },
     "gatsby-plugin-react-helmet",
@@ -33,13 +33,14 @@ module.exports = {
             "./src/page-templates/cms-entry.template.js"
           ),
         },
+        rehypePlugins: [require("rehype-slug")],
       },
     },
     {
       resolve: "gatsby-plugin-manifest",
       options: {
         name: "Interview Book",
-        short_name: "IntwBook",
+        short_name: "InBook",
         start_url: "/",
         background_color: "#663399",
         theme_color: "#663399",
@@ -50,6 +51,7 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     "gatsby-plugin-offline",
+    `gatsby-plugin-sass`,
     "gatsby-plugin-styled-components",
     {
       resolve: "gatsby-plugin-netlify-cms",

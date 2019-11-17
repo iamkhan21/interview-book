@@ -1,8 +1,7 @@
+import { graphql, Link, StaticQuery } from "gatsby"
 import React from "react"
-import { graphql, StaticQuery } from "gatsby"
 import styled from "styled-components"
 import { safelyGetSiteConfig } from "../cms"
-import { Link } from "gatsby"
 
 export const query = graphql`
   query {
@@ -10,8 +9,11 @@ export const query = graphql`
       context {
         frontmatter {
           menu_nav {
-            text
-            url
+            label
+            links {
+              text
+              url
+            }
           }
         }
       }
@@ -19,23 +21,51 @@ export const query = graphql`
   }
 `
 const Aside = styled.aside`
-  .menu-item + .menu-item {
-    border-top: 1px solid #000000;
-  }
-`
-const MenuItem = styled(Link)`
-  color: #333;
-  display: inline-block;
-  width: 100%;
-  padding: 10px 5px;
-  box-sizing: border-box;
-  text-decoration: none;
-  transition: background-color 0.3s ease-in-out;
-  &:hover {
-    background-color: #f2f2f2;
+  position: relative;
+  .container {
+    position: sticky;
+    top: 20px;
+    max-height: calc(100vh - 80px);
+    overflow-y: auto;
   }
 `
 
+const MenuItemWrap = styled.div`
+  .title {
+    margin: 0 0 5px;
+    cursor: pointer;
+  }
+  & + .menu-item {
+    margin-top: 5px;
+    padding-top: 10px;
+    border-top: 1px solid #e5e5e5;
+  }
+`
+const MenuLink = styled(Link)`
+  font-size: 14px;
+  color: #333;
+  padding: 2px 5px;
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+`
+
+const MenuItem = ({ label, links }) => {
+  const [show, toggle] = React.useState(false)
+  return (
+    <MenuItemWrap className="menu-item">
+      <h3 className="title" onClick={() => toggle(!show)}>
+        {label}
+      </h3>
+      {show &&
+        (links || []).map(({ url, text }, x) => (
+          <MenuLink key={x} to={url}>
+            {text}
+          </MenuLink>
+        ))}
+    </MenuItemWrap>
+  )
+}
 export const Menu = () => (
   <StaticQuery
     query={query}
@@ -43,11 +73,11 @@ export const Menu = () => (
       const menu = safelyGetSiteConfig(data.sitePage).menu_nav || []
       return (
         <Aside>
-          {menu.map((item, i) => (
-            <div key={i} className="menu-item">
-              <MenuItem to={item.url}>{item.text}</MenuItem>
-            </div>
-          ))}
+          <div className="container">
+            {menu.map((item, i) => (
+              <MenuItem key={i} {...item} />
+            ))}
+          </div>
         </Aside>
       )
     }}

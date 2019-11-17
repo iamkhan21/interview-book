@@ -1,5 +1,7 @@
 const ctaEditor = props =>
-  `<CallToAction url="${props.url || ""}" align="center" bgColor="${props.bgColor}">${props.text || ""}</CallToAction>`
+  `<CallToAction url="${props.url || ""}" align="center" bgColor="${
+    props.bgColor
+  }">${props.text || ""}</CallToAction>`
 
 export const ctaEditorConfig = {
   // Internal id of the component
@@ -15,7 +17,7 @@ export const ctaEditorConfig = {
       name: "bgColor",
       widget: "select",
       options: ["crimson", "seagreen", "rebeccapurple", "midnightblue"],
-      default: "rebeccapurple"
+      default: "rebeccapurple",
     },
   ],
   // Pattern to identify a block as being an instance of this component
