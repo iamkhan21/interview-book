@@ -2,6 +2,7 @@
 id: landscape
 title: Landscape
 ---
+
 Most of the content covered here will be specific to the Bay Area. Landscape differences due to geographical location are mentioned briefly [below](#geographical-location).
 
 ## Career prospects as a Software Engineer
@@ -40,19 +41,19 @@ _Salaries of top tech internships in 2016 ([source](https://twitter.com/rodneyfo
 
 Companies have different focuses depending on the stage they are at and the types of work to be done can also be vastly different. In the earlier stages where product-market fit hasn't been found, companies would be rapidly iterating on products and features, whereas larger companies that have already found the right product will focus on scaling their infrastructure and growing their users. Liquid compensation is also lower at early-stage companies due to the equity not being worth any money, but there is the chance of earning a lot more if/when the company IPOs or gets acquired.
 
-|  | Early-stage Startup | Late-stage Startup | Large Company |
-| --- | --- | --- | --- |
-| Company Size | <100 | 100-1000 | >1000 |
-| Compensation | Base salary is a bit higher than big companies. Higher equity amount but its value is hard to judge as the company's valuation is unclear and stocks are not worth money yet. | Base salary is a bit higher than big companies. Company valuation is clearer and stocks have higher chance of being worth money. | Depends on the prestige of the company. Compensation is usually market standard or better. Stocks are worth money if company has gone public. |
-| Types of Work | Mainly product development. Engineers have to wear multiple hats - Front End, Back End, DevOps, Design, etc. | Product development and some infra. | Diverse roles and specialized work; dedicated people for each role. Infra work is more common. Also more opportunities for internal transfers. |
-| Career Ladders | Unstructured. No (or very vague) career levels. No formal mentorship nor training. | Somewhat structured. | Very structured. Well-defined career levels. |
-| Iteration Speed | Extremely fast. Struggling to find product market fit. | Moderate. Has found product market fit, trying to grow user base. | Stable product with wide user base. Have to roll out changes incrementally and run experiments. |
+|                 | Early-stage Startup                                                                                                                                                           | Late-stage Startup                                                                                                               | Large Company                                                                                                                                  |
+| --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| Company Size    | <100                                                                                                                                                                          | 100-1000                                                                                                                         | >1000                                                                                                                                          |
+| Compensation    | Base salary is a bit higher than big companies. Higher equity amount but its value is hard to judge as the company's valuation is unclear and stocks are not worth money yet. | Base salary is a bit higher than big companies. Company valuation is clearer and stocks have higher chance of being worth money. | Depends on the prestige of the company. Compensation is usually market standard or better. Stocks are worth money if company has gone public.  |
+| Types of Work   | Mainly product development. Engineers have to wear multiple hats - Front End, Back End, DevOps, Design, etc.                                                                  | Product development and some infra.                                                                                              | Diverse roles and specialized work; dedicated people for each role. Infra work is more common. Also more opportunities for internal transfers. |
+| Career Ladders  | Unstructured. No (or very vague) career levels. No formal mentorship nor training.                                                                                            | Somewhat structured.                                                                                                             | Very structured. Well-defined career levels.                                                                                                   |
+| Iteration Speed | Extremely fast. Struggling to find product market fit.                                                                                                                        | Moderate. Has found product market fit, trying to grow user base.                                                                | Stable product with wide user base. Have to roll out changes incrementally and run experiments.                                                |
 
 ## Geographical location
 
-|  | US (Silicon Valley/NY) | Singapore |
-| --- | --- | --- |
-| Starting Pay | USD 100,000 | Monthly $4320 (Median), $5000 (75th percentile) |
-| Talent Access | Global talent, diverse nationalities and backgrounds | Usually regional, mostly Asians |
-| Types of Companies | HQ of large companies (Facebook, Amazon, Apple, Google, Microsoft, etc), Startups | Branch offices of large companies, Startups |
-| Types of Engineering Work | Depends on size of office/company | Both product and infra (building new programming languages, frameworks, and tools) |
+|                           | US (Silicon Valley/NY)                                                            | Singapore                                                                          |
+| ------------------------- | --------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| Starting Pay              | USD 100,000                                                                       | Monthly $4320 (Median), $5000 (75th percentile)                                    |
+| Talent Access             | Global talent, diverse nationalities and backgrounds                              | Usually regional, mostly Asians                                                    |
+| Types of Companies        | HQ of large companies (Facebook, Amazon, Apple, Google, Microsoft, etc), Startups | Branch offices of large companies, Startups                                        |
+| Types of Engineering Work | Depends on size of office/company                                                 | Both product and infra (building new programming languages, frameworks, and tools) |

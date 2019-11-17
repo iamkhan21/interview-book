@@ -10,7 +10,7 @@ const Container = styled.main`
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 20px;
-  
+
   @media (min-width: 960px) {
     grid-template-columns: 200px 1fr;
   }
