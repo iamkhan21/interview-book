@@ -60,7 +60,14 @@ export function SEO({ description, lang, meta, keywords, title }) {
                   : []
               )
               .concat(meta)}
-          />
+          >
+            <link
+              rel="stylesheet"
+              href="https://cdn.jsdelivr.net/npm/normalize-css@2.3.1/normalize.css"
+              integrity="sha256-oQhE1gzQ/RLRlHgKfVUhrAe03FJbQLmTjY5ngEJPhdg="
+              crossOrigin="anonymous"
+            />
+          </Helmet>
         )
       }}
     />
